@@ -16,6 +16,7 @@ namespace JeopardyApp.Controllers
                 new Flashcard { Id = 4, Question = "Which EF Core component is primarily responsible for communicating with the database?", Answer = "A. DbContext"},
                 new Flashcard { Id = 5, Question = "What does the following command primarily do? dotnet ef dbcontext scaffold...", Answer = "C. Generates EF Core models and a DbContext from an existing database"},
                 new Flashcard { Id = 6, Question = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?", Answer = "B. appsettings.json" },
+                new Flashcard { Id = 7, Question = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?", Answer = "B. One-to-Many"},
 
             };
 
