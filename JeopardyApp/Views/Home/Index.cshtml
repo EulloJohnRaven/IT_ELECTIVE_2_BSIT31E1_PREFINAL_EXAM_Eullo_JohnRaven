@@ -1,8 +1,74 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<JeopardyApp.Models.Flashcard>
+@{
+    ViewData["Title"] = "Prefinals Jeopardy";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .jeopardy-board {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #000;
+    }
+    .flashcard {
+        background-color: transparent;
+        width: 100%;
+        height: 200px;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+    .flashcard-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    .flashcard.flipped .flashcard-inner {
+        transform: rotateY(180deg);
+    }
+    .flashcard-front, .flashcard-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .flashcard-front {
+        background-color: #060CE9; /* Jeopardy Blue */
+        color: white;
+        font-weight: bold;
+    }
+    .flashcard-back {
+        background-color: #FFCC00; /* Jeopardy Yellow */
+        color: black;
+        transform: rotateY(180deg);
+        font-weight: bold;
+    }
+</style>
+
+<h1 class="text-center mb-4">Prefinals Flashcard Review</h1>
+
+<div class="jeopardy-board">
+    @foreach (var card in Model)
+    {
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    Q@(card.Id): @card.Question
+                </div>
+                <div class="flashcard-back">
+                    @card.Answer
+                </div>
+            </div>
+        </div>
+    }
 </div>
