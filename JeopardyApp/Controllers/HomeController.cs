@@ -28,6 +28,7 @@ namespace JeopardyApp.Controllers
                 new Flashcard { Id = 16, Question = "Which is the best reason for having a database-level unique constraint on StudentNumber?", Answer = "A. It protects data integrity even if application-level validation is bypassed"},
                 new Flashcard { Id = 17, Question = "What is the purpose of a try...catch block in a controller?", Answer = "B. To catch and handle exceptions that may occur during execution" },
                 new Flashcard { Id = 18, Question = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?", Answer = "B. UseExceptionHandler()" },
+                new Flashcard { Id = 19, Question = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?", Answer = "B. Display a Not Found (404) response/page" },
 
             };
 
