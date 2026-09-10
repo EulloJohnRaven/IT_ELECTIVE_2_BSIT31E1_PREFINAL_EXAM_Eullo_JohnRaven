@@ -24,6 +24,7 @@ namespace JeopardyApp.Controllers
                 new Flashcard { Id = 12, Question = "What is the main benefit of Include(s => s.Section)?", Answer = "A. It loads the related Section navigation property" },
                 new Flashcard { Id = 13, Question = "Which type of validation occurs in the browser before a request is sent to the server?", Answer = "B. Client-side validation" },
                 new Flashcard { Id = 14, Question = "Why is server-side validation still necessary if client-side validation exists?", Answer = "A. Client-side validation can be bypassed"},
+                new Flashcard { Id = 15, Question = "A school requires every student to have a unique Student Number. Which rule best represents this requirement?", Answer = "B. Student Number should be unique" },
 
             };
 
