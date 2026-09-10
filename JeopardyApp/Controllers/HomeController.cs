@@ -18,6 +18,7 @@ namespace JeopardyApp.Controllers
                 new Flashcard { Id = 6, Question = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?", Answer = "B. appsettings.json" },
                 new Flashcard { Id = 7, Question = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?", Answer = "B. One-to-Many"},
                 new Flashcard { Id = 8, Question = "In the following example, what is SectionId? public int SectionId { get; set; }", Answer = "B. Foreign key referencing Section" },
+                new Flashcard { Id = 9, Question = "What is the purpose of a navigation property such as public Section Section { get; set; }?", Answer = "B. It represents a relationship to another entity" },
 
             };
 
