@@ -21,6 +21,7 @@ namespace JeopardyApp.Controllers
                 new Flashcard { Id = 9, Question = "What is the purpose of a navigation property such as public Section Section { get; set; }?", Answer = "B. It represents a relationship to another entity" },
                 new Flashcard { Id = 10, Question = "What does .Include() generally allow EF Core to do?", Answer = "B. Load related Section data together with Students" },
                 new Flashcard { Id = 11, Question = "Why might a ViewModel be used when displaying Student and Section information?",Answer = "B. To combine or shape the data specifically needed by the view"},
+                new Flashcard { Id = 12, Question = "What is the main benefit of Include(s => s.Section)?", Answer = "A. It loads the related Section navigation property" },
 
             };
 
