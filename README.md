@@ -24,3 +24,20 @@
 
 # Version Control: Executed a minimum of 20 commits, ensuring that each numbered item answered was recorded as an individual commit during the exam completion process.
 
+How to Run the Application
+
+Requirements
+Visual Studio 2026
+.NET 10 SDK
+
+Steps for cloning the repository
+
+Clone the repository.
+
+git clone https://github.com/EulloJohnRaven/IT_ELECTIVE_2_BSIT31E1_PREFINAL_EXAM_Eullo_JohnRaven.git
+
+Open the solution (.sln) file in Visual Studio.
+
+Press Ctrl + F5 or click Start to build and run the application.
+
+Your browser will open automatically running the application
