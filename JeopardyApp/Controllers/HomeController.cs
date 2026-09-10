@@ -22,6 +22,7 @@ namespace JeopardyApp.Controllers
                 new Flashcard { Id = 10, Question = "What does .Include() generally allow EF Core to do?", Answer = "B. Load related Section data together with Students" },
                 new Flashcard { Id = 11, Question = "Why might a ViewModel be used when displaying Student and Section information?",Answer = "B. To combine or shape the data specifically needed by the view"},
                 new Flashcard { Id = 12, Question = "What is the main benefit of Include(s => s.Section)?", Answer = "A. It loads the related Section navigation property" },
+                new Flashcard { Id = 13, Question = "Which type of validation occurs in the browser before a request is sent to the server?", Answer = "B. Client-side validation" },
 
             };
 
