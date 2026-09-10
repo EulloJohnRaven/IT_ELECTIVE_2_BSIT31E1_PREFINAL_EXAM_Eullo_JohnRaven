@@ -8,7 +8,12 @@ namespace JeopardyApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var flashcards = new List<Flashcard>
+            {
+                new Flashcard { Id = 1, Question = "What is the main problem solved by using a database instead of an in-memory collection?", Answer = "C. It allows data to persist after the application stops"},
+            };
+
+            return View(flashcards);
         }
 
         public IActionResult Privacy()
