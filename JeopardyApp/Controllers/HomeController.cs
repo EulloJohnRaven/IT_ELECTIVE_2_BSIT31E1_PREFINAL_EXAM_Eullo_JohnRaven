@@ -11,6 +11,8 @@ namespace JeopardyApp.Controllers
             var flashcards = new List<Flashcard>
             {
                 new Flashcard { Id = 1, Question = "What is the main problem solved by using a database instead of an in-memory collection?", Answer = "C. It allows data to persist after the application stops"},
+                new Flashcard { Id = 2, Question = "Which approach is being used when an existing database is used to generate EF Core entity classes?", Answer = "B. Database-First" },
+
             };
 
             return View(flashcards);
